@@ -1,0 +1,90 @@
+
+.productCard__link {
+    text-decoration: none;
+}
+
+.productCard {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 15px;
+    max-width: 350px;
+    height: 100%;
+    gap: 5px;
+    background: var(--primary-mode-color);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.productCard__img__container {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard__img {
+    width: 100%;
+    height: 100%;
+    min-width: 230px;
+    min-height: 230px;
+    background: gray;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.productCard__description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.productCard__title {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--third-text-color);
+    line-height: 18px;
+    margin: 0;
+}
+
+.productCard__description__bottom {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-text-color);
+}
+
+.productCard__price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productCard__stock {
+    font-size: 14px;
+    font-weight: bold;
+    color: #C60000;
+}
+
+
+@media (max-width: 420px) {
+    
+    .productCard {
+        padding: 5px;
+        border-radius: 15px;
+    }
+    
+}
+
+
+@media (max-width: 750px) {
+    
+    .productCard__img {
+        min-height: 115px;
+        min-width: 115px;
+    }
+    
+
+}

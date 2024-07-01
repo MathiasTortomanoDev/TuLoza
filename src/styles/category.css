@@ -1,0 +1,160 @@
+
+.category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.category__start__background {
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    max-height: 1000px;
+    background: rgba(0, 0, 0, 0.473);
+}
+
+.category__start__background-inodoros {
+    background: url("../images/backgrounds/inodoros.png");
+}
+
+.category__start__background-bañeras {
+    background: url("../images/backgrounds/bañeras.png") bottom;
+}
+
+.category__start__background-espejos {
+    background: url("../images/backgrounds/espejos.png");
+}
+
+.category__start__background-cisternas {
+    background: url("../images/backgrounds/cisternas.png") bottom;
+}
+
+.category__start__background-griferias {
+    background: url("../images/backgrounds/griferias.png") top;
+}
+
+.category__start__background-bachas {
+    background: url("../images/backgrounds/bachas.png") bottom;
+}
+
+.category__start__background-accesorios {
+    background: url("../images/backgrounds/accesorios.png") center;
+}
+
+.category__start__background-bidets {
+    background: url("../images/backgrounds/bidets.png") center;
+}
+
+.category__start__background-tapas {
+    background: url("../images/backgrounds/tapas.png") center;
+}
+
+.category__start__background-muebles {
+    background: url("../images/backgrounds/muebles.png") center;
+}
+
+.category__start__background-lavatorios {
+    background: url("../images/backgrounds/lavatorios.png") center;
+}
+
+.category__start__background-mingitorios {
+    background: url("../images/backgrounds/mingitorios.png") center;
+}
+
+.category__start__background-mamparas {
+    background: url("../images/backgrounds/mamparas.png") center;
+}
+
+.category__start__background-desagues {
+    background: url("../images/backgrounds/desagues.png") center;
+}
+
+.category__start__background-explore {
+    background: url("../images/backgrounds/explore.png") center;
+}
+
+.category__start__background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category__start {
+    width: 100%;
+    max-width: 1080px;
+    height: 100svh;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category__start__title {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.category__products__container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            250px, 
+            1fr
+        )
+    ); 
+    grid-gap: 15px; 
+    width: 100%;
+    max-width: 1080px;
+    padding: 80px 0 20px 0;
+}
+
+.category__loadMore {
+    padding: 5px 25px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.category__noResults__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.category__noResults__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.616);
+    margin: 0 0 10px 0;
+}
+
+.category__noResults__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 420px) {
+    
+    .category__products__container {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                125px, 
+                1fr
+            )
+        );
+    }
+    
+}
